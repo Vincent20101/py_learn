@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+
+
+    <title>鱼书</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    
+    <link rel="stylesheet"
+          href="/static/3rd/ui/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="shortcut icon"
+          href="/static/images/icon.png">
+
+    <link rel="stylesheet" href="/static/css/search-result.css">
+
+
+<body>
+
+    <div class="nav-self">
+        <div style="padding-top: inherit" class="container">
+            <form class="form-inline" action="/book/search" method="get">
+                <div class="flex-vertical-center-height">
+                    <div class="col-md-2  col-xs-3 logo">
+                        <img src="/static/images/logo-yushu.png"/>
+                    </div>
+                    <div style="margin-left:20px;" class="col-md-7  col-xs-6 input-group">
+                        <input name="q" type="text" placeholder="ISBN、图书名称"
+                               class="form-control input-sm">
+                        <span class="input-group-btn">
+                            <input class="btn btn-search" type="submit" value="搜索"/>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-xs-3" style="padding-right: 0">
+
+
+
+
+                        <div class="container-height flex-vertical-center login-box">
+                            
+                                <div style="height: 100%; width: 100%;display: flex; justify-content: flex-end; align-items: center">
+                                    <a href="/login">登录</a>
+                                    <a class="btn-end" href="/register">注册</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="sub-nav flex-vertical-center">
+        <div class="container" style="width: 100%">
+            <div class="row">
+                <div class="col-md-2 col-xs-3 col-md-offset-2">
+                    <a id="recent" href="/"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/upload.png"/>
+                        <span>最近上传</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="gifts" href="/my/gifts"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/gift.png"/>
+                        <span>赠送清单</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="wishes" href="/my/wish"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/wish.png"/>
+                        <span>心愿清单</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="pending" href="/pending"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/fish.png"/>
+                        <span>鱼漂</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='container'>
+    <div class="row">
+        
+            
+        
+        
+    </div>
+    
+     
+    <div style="margin-top:20px;" class="row flex-vertical-center">
+        <div class="col-md-6">
+            <span class="sub-title">搜索 <span class="space highlight"
+                                             id="keyword">python</span>的结果</span>
+        </div>
+        <div class="col-md-3 col-md-offset-3">
+            <span class="sub-title"> 共 <span class="space"
+                                             id="total">58</span> 条记录</span>
+        </div>
+    </div>
+    <hr>
+    
+        <div class="row col-padding">
+            <a href="/book/9787121266836/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s28274231.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">python黑帽子</span>
+
+                    <span>[美]Justin Seitz / 电子工业出版社 / ￥55</span>
+                    <span class="summary">本书是畅销书《Python 灰帽子—黑客与逆向工程师的 Python 编程之道》的姊妹篇，那本书一面市便占据计算机安全类书籍的头把交椅。本书由 Immunity 公司的高级安全研究员 Justin Seitz 精心撰写。作者根据自己在安全界，特别是渗透测试领域的几十年经验，向读者介绍了 Python 如何被用在黑客和渗透测试的各个领域，从基本的网络扫描到数据包捕获，从 Web 爬虫到编写 Burp 扩展工具，从编写木马到权限提升等。 作者在本书中的很多实例都非常具有创新和启发意义， 如 HTTP 数据中的图片检测、 基于 GitHub命令进行控制的模块化木马、浏览器的中间人攻击技术、利用 COM 组件自动化技术窃取数据、通过进程监视和代码插入实现权限提升、通过向虚拟机内存快照中插入 shellcode 实现木马驻留和权限提升等。通过对这些技术的学习，读者不仅能掌握各种 Python 库的应用和编程技术，还能拓宽视野，培养和锻炼自己的黑客思维。读者在阅读本书时也完全感觉不到其他一些技术书籍常见的枯燥和乏味</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111412342/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s25802261.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python语言程序设计</span>
+
+                    <span>（美）Y. Daniel Liang / 机械工业出版社 / ￥79.00元</span>
+                    <span class="summary">本书保持了Liang博士系列丛书中一贯的、标志性的教与学的哲学：以实例教，由实践学。书中采用了他所提出的已经经过实践检验的“基础先行”的方法，即在定义类之前，首先使用清晰简明的语言介绍基本程序设计概念，如选择语句、循环和函数；在介绍面向对象程序设计和GUI编程之前，首先介绍基本逻辑和程序设计概念。书中除了给出一些以游戏和数学为主的典型实例外，还在每章的开始使用简单的图形给出一两个例子，以激发学生的学习兴趣。\n本书特色\n	以“基础先行”方法介绍基本程序设计概念和方法，帮助学生循序渐进地学习所有必需和重要的基本概念。\n	以“问题驱动”方法讲授程序设计技术，强调问题求解，而非语法。通过广泛的趣味性实例（涉及数学、自然科学、商业、金融、游戏、动画和多媒体领域）来激发学生的学习兴趣，为求解这些问题，适时地引入相关的语法和库。\n	可以灵活介绍GUI相关主题。第1~6章使用内置的Turtle图形模块，其余部分使用Tkinter，这两种工具都是简单、易学的程序设计教学工具。每章的开始都有GUI实例，每章末尾还有专门的GUI练习。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111270287/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s3789820.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Django Web开发指南</span>
+
+                    <span>Jeff Forcier、Paul Bissex / 机械工业出版社 / ￥49.00元</span>
+                    <span class="summary">本书讲述如何用Python框架Django构建出强大的Web解决方案，本书讲解了使用新的Django 1.0版的各种主要特性所需要的技术、工具以及概念。 全书分为12章和6个附录，内容包括，Django Python实战，Django速成：构建一个Blog，起始，定义和使用模型，URL、HTTP机制和视图，模板和表单处理，Photo Gallery，内容管理系统，Liveblog，Pastebin，高级Django编程，高级Django部署。附录内容包括命令行基础，安装运行Django，实用Django开发工具，发现、评估、使用Django应用程序，在Google App Engine上使用Django，参与Django项目。 本书适用于Python框架Django初学者，Django Web开发技术人员。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115372697/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s28480936.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python网络编程攻略</span>
+
+                    <span>萨卡尔 (Dr.M.O.Faruque Sarker) / 人民邮电出版社 / ￥45.00元</span>
+                    <span class="summary">开发TCP/IP网络客户端和服务器应用\n管理本地设备的IPv4/IPv6网络接口\n使用HTTP和HTTPS协议编写用途多、效率高的Web客户端\n编写可使用常见电子邮件协议的电子邮件客户端\n通过Telnet和SSH连接执行远程系统管理任务\n使用Web服务与流行的网站交互\n监控并分析重要的常见网络安全漏洞</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787121300103/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s29120038.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python高效开发实战</span>
+
+                    <span>刘长龙 / 电子工业出版社 / ￥89</span>
+                    <span class="summary">也许你听说过全栈工程师，他们善于设计系统架构，精通数据库建模、通用网络协议、后端并发处理、前端界面设计，在学术研究或工程项目上能独当一面。通过对Python及其周边Web框架的学习和实践，你就可以成为这样的全能型人才。\n《Python高效开发实战——Django、Tornado、Flask、Twisted》分为3部分：第1部分是基础篇，带领初学者实践Python开发环境和掌握基本语法，同时对网络协议、Web客户端技术、数据库建模编程等网络编程基础深入浅出地进行学习；第2部分是框架篇，学习当前最流行的Python Web框架，即Django、Tornado、Flask和Twisted，达到对各种Python网络技术融会贯通的目的；第3部分是实战篇，分别对4种框架进行项目实践，利用其各自的特点开发适用于不同场景的网络程序。\n《Python高效开发实战——Django、Tornado、Flask、Twisted》内容精练、重点突出、实例丰富、讲解通俗，是广大网络应用设计和开发人员不可多得的一本参考书，同时非常适合大中专院校师生学习和阅读，也可作为高等院校计算机及相关培训机构的教材。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111270157/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s3914264.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python开发技术详解</span>
+
+                    <span>周伟、宗杰 / 机械工业出版社 / ￥69.00元</span>
+                    <span class="summary">Python是目前最流行的动态脚本语言之一。本书共27章，由浅入深、全面系统地介绍了利用Python语言进行程序开发的知识和技巧，包括 Python的安装和环境配置、Python的基本语法、模块和函数、内置数据结构、字符串和文件的处理、正则表达式的使用、异常的捕获和处理、面向对象的语言特性和设计、Python的数据库编程、wxPython库的使用、HTML应用、XML应用、Django网页开发框架的使用方法、测试驱动开发模式应用、Python进程和线程、Python系统管理、网络模块、Python图像处理和游戏开发、Python扩展和嵌入以及Windows下的 Python开发等。为了便于读者学习，本书每个章节都提供了详尽的例子，结合实例讲解各个知识点。.\n本书适合Python爱好者、大中专院校的学生、社会培训班的学生以及用Python语言进行系统管理、GUI开发、Web开发、数据库编程、网络编程的人员使用。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9780735710900/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s4257397.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Web Programming</span>
+
+                    <span>Steve Holden / Sams / ￥USD 49.99</span>
+                    <span class="summary">Python Web Programming is a practical introduction to building networked systems in the object-oriented framework of the Python language. It shows how to leverage the powerful Python libraries to build systems with less programming effort and easier maintenance. It is an implementation guide to utilizing Python&#39;s assets instead of simply teaching Python in isolation.Python is a remarkably powerful key web development technology for the future. All code developed in the book will be available on www.newriders.com. This is an incredible asset because the Python language allows for modular programming between systems, thus readers in their projects can use code created in the book.</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9781849513746/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s6515146.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python 3 Web Development Beginner&#39;s Guide</span>
+
+                    <span>Michel Anders / Packt Publishing / ￥USD 44.99</span>
+                    <span class="summary"></span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787302266334/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s8848654.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Web开发学习实录</span>
+
+                    <span>李勇、王文强 / 清华大学出版社 / ￥66.00元</span>
+                    <span class="summary">Python是目前流行的动态脚本语言之一。\n李勇，本书共15章，由浅入深、全面系统地介绍了使用Python语言进行程序开发的知识和技巧。内容包括 Python 的安装和环境配置、Python的基本语法、流程控制、模块和函数、数据结构、字符串与正则表达式、面向对象编程、文件处理、程序异常和处理、数据库连接和持久化操作、Python网络功能、Python与HTML、XML 的应用、Python图像界面的处理、Python的Web开发等。\n本书适合Python爱好者、大中专院校的学生、社会培训班的学生以及使用Python语言进行系统管理、GUI 开发、Web开发、数据库编程和网络编程的程序员使用。\n当前，Python已经成为流行的程序设计语言之一，被越来越多的人作为首选语言来学习和应用。作为一种解释型的语言，Python具有高效的数据结构，提供了一种简单但很有效的方式以便进行面向对象编程。 为了使广大读者既能了解Python语言的基础知识，又能将Python语言应用于特定领域(如Web开发)，李勇，本书全面地介绍了用Python语言进行程序开发的相关知识。学习完本书之后，相信读者能够掌握Python语言，并且可以使用Python语言进行实际项目的开发。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115403278/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s28315327.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Web开发：测试驱动方法</span>
+
+                    <span>Harry J.W. Percival / 人民邮电出版社 / ￥99</span>
+                    <span class="summary">本书从最基础的知识开始，讲解Web开发的整个流程，展示如何使用Python做测试驱动开发。本书由三个部分组成。第一部分介绍了测试驱动开发和Django的基础知识。第二部分讨论了Web开发要素，探讨了Web开发过程中不可避免的问题，及如何通过测试解决这些问题。第三部分探讨了一些高级话题，如模拟技术、集成第三方插件、Ajax、测试固件、持续集成等。本书适合Web开发人员阅读。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115404831/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s29632153.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python算法教程</span>
+
+                    <span>[挪威] Magnus Lie Hetland 赫特兰 / 人民邮电出版社 / ￥69.00元</span>
+                    <span class="summary">本书用Python语言来讲解算法的分析和设计。本书主要关注经典的算法，但同时会为读者理解基本算法问题和解决问题打下很好的基础。全书共11章。分别介绍了树、图、计数问题、归纳递归、遍历、分解合并、贪心算法、复杂依赖、Dijkstra算法、匹配切割问题以及困难问题及其稀释等内容。本书在每一章结束的时候均有练习题和参考资料，这为读者的自我检查以及进一步学习提供了较多的便利。在全书的最后，给出了练习题的提示，方便读者进行查漏补缺。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115433732/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s29205314.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python机器学习</span>
+
+                    <span>[美] Michael Bowles / 人民邮电出版社 / ￥69.00元</span>
+                    <span class="summary">在学习和研究机器学习的时候，面临令人眼花缭乱的算法，机器学习新手往往会不知\n所措。本书从算法和Python 语言实现的角度，帮助读者认识机器学习。\n书专注于两类核心的“算法族”，即惩罚线性回归和集成方法，并通过代码实例来\n展示所讨论的算法的使用原则。全书共分为7 章，详细讨论了预测模型的两类核心算法、预测模型的构建、惩罚线性回归和集成方法的具体应用和实现。\n本书主要针对想提高机器学习技能的Python 开发人员，帮助他们解决某一特定的项\n目或是提升相关的技能。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9781849513609/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s4585017.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Text Processing with NLTK 2.0 Cookbook</span>
+
+                    <span>Jacob Perkins / Packt Publishing / ￥USD 39.99</span>
+                    <span class="summary"></span>
+                </div>
+            </a>
+        </div>
+    
+    <div class="row">
+        <div class="flex-hor-center">
+            <ul class="pagination" id="pagination"></ul>
+        </div>
+    </div>
+
+</div>
+<div id="footer" class="flex-hor-center">
+    <span>© 2017-2020 yushu.im created by 七月</span>
+</div>
+</body>
+
+
+    
+    <script src="/static/3rd/jquery-3.2.1.min.js"></script>
+    <script src="/static/3rd/bootstrap.min.js"></script>
+    <script src="/static/js/base.js"></script>
+    <script>
+        $SCRIPT_ROOT = "";
+    </script>
+
+    <script src="/static/3rd/jquery.twbsPagination.min.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/search_result.js"></script>
+
+
+</html>

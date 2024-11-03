@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+
+
+    <title>鱼书</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    
+    <link rel="stylesheet"
+          href="/static/3rd/ui/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="shortcut icon"
+          href="/static/images/icon.png">
+
+    <link rel="stylesheet" href="/static/css/search-result.css">
+
+
+<body>
+
+    <div class="nav-self">
+        <div style="padding-top: inherit" class="container">
+            <form class="form-inline" action="/book/search" method="get">
+                <div class="flex-vertical-center-height">
+                    <div class="col-md-2  col-xs-3 logo">
+                        <img src="/static/images/logo-yushu.png"/>
+                    </div>
+                    <div style="margin-left:20px;" class="col-md-7  col-xs-6 input-group">
+                        <input name="q" type="text" placeholder="ISBN、图书名称"
+                               class="form-control input-sm">
+                        <span class="input-group-btn">
+                            <input class="btn btn-search" type="submit" value="搜索"/>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-xs-3" style="padding-right: 0">
+
+
+
+
+                        <div class="container-height flex-vertical-center login-box">
+                            
+                                <div style="height: 100%; width: 100%;display: flex; justify-content: flex-end; align-items: center">
+                                    <a href="/login">登录</a>
+                                    <a class="btn-end" href="/register">注册</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="sub-nav flex-vertical-center">
+        <div class="container" style="width: 100%">
+            <div class="row">
+                <div class="col-md-2 col-xs-3 col-md-offset-2">
+                    <a id="recent" href="/"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/upload.png"/>
+                        <span>最近上传</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="gifts" href="/my/gifts"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/gift.png"/>
+                        <span>赠送清单</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="wishes" href="/my/wish"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/wish.png"/>
+                        <span>心愿清单</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="pending" href="/pending"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/fish.png"/>
+                        <span>鱼漂</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='container'>
+    <div class="row">
+        
+            
+        
+        
+    </div>
+    
+     
+    <div style="margin-top:20px;" class="row flex-vertical-center">
+        <div class="col-md-6">
+            <span class="sub-title">搜索 <span class="space highlight"
+                                             id="keyword">python</span>的结果</span>
+        </div>
+        <div class="col-md-3 col-md-offset-3">
+            <span class="sub-title"> 共 <span class="space"
+                                             id="total">58</span> 条记录</span>
+        </div>
+    </div>
+    <hr>
+    
+        <div class="row col-padding">
+            <a href="/book/9787121068744/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s3435132.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python源码剖析</span>
+
+                    <span>陈儒 / 电子工业出版社 / ￥69.80元</span>
+                    <span class="summary">作为主流的动态语言，Python不仅简单易学、移植性好，而且拥有强大丰富的库的支持。此外，Python强大的可扩展性，让开发人员既可以非常容易地利用C/C++编写Python的扩展模块，还能将Python嵌入到C/C++程序中，为自己的系统添加动态扩展和动态编程的能力。.\n为了更好地利用Python语言，无论是使用Python语言本身，还是将Python与C/C++交互使用，深刻理解Python的运行原理都是非常重要的。本书以CPython为研究对象，在C代码一级，深入细致地剖析了Python的实现。书中不仅包括了对大量Python内置对象的剖析，更将大量的篇幅用于对Python虚拟机及Python高级特性的剖析。通过此书，读者能够透彻地理解Python中的一般表达式、控制结构、异常机制、类机制、多线程机制、模块的动态加载机制、内存管理机制等核心技术的运行原理，同时，本书所揭示的动态语言的核心技术对于理解其他动态语言，如 Javascript、Ruby等也有较大的参考价值。..\n本书适合于Python程序员、动态语言爱好者、C程序员阅读</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787302066422/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s1326052.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python 编程金典</span>
+
+                    <span>P.J.Deitel、J.P.Liperi、B.A.Wiedermann、H.M.Deitel / 清华大学出版社 / ￥88.00元</span>
+                    <span class="summary">本书由全球著名的程序语言培训专家精心编著，解释了如何将Python用作常规用途，编写多层、客户机/服务器结构、数据库密集型、基于Internet和Web的应用程序。书中采用作者独创的“活代码”教学方式，层层揭示了Python这一程序设计语言的强大功能，并通过穿插在全书各处的屏幕输出和编程技巧与提示，帮助读者搭建良好的知识结构、养成良好的编程习惯、避免常见的编程错误以及写出高效、可靠的应用程序。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9780596515829/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s3355252.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python for Unix and Linux System Administration</span>
+
+                    <span>Noah Gift、Jeremy Jones / O&#39;Reilly Media / ￥USD 49.99</span>
+                    <span class="summary">Python is an ideal language for solving problems, especially in Linux and Unix networks. With this pragmatic book, administrators can review various tasks that often occur in the management of these systems, and learn how Python can provide a more efficient and less painful way to handle them.\nEach chapter in Python for Unix and Linux System Administration presents a particular administrative issue, such as concurrency or data backup, and presents Python solutions through hands-on examples. Once you finish this book, you&#39;ll be able to develop your own set of command-line utilities with Python to tackle a wide range of problems. Discover how this language can help you:\n* Read text files and extract information\n* Run tasks concurrently using the threading and forking options\n* Get information from one process to another using network facilities\n* Create clickable GUIs to handle large and complex utilities\n* Monitor large clusters of machines by interacting with SNMP programmatically\n* Master the IPython Interactive Python shell to replace or augment Bash, Korn, or Z-Shell\n* Integrate Cloud Computing into your infrastructure, and learn to write a Google App Engine Application\n* Solve unique data backup challenges with customized scripts\n* Interact with MySQL, SQLite, Oracle, Postgres, Django ORM, and SQLAlchemy\nWith this book, you&#39;ll learn how to package and deploy your Python applications and libraries, and write code that runs equally well on multiple Unix platforms. You&#39;ll also learn about several Python-related technologies that will make your life much easier.</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115230270/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s4387251.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python基础教程</span>
+
+                    <span>MagnusLieHetland / 人民邮电出版社 / ￥69.00元</span>
+                    <span class="summary">本书是经典教程的全新改版，作者根据Python 3.0版本的种种变化，全面改写了书中内容，做到既能“瞻前”也能“顾后”。本书层次鲜明、结构严谨、内容翔实，特别是在最后几章，作者将前面讲述的内容应用到了10个引人入胜的项目中，并以模板的形式介绍了项目的开发过程。本书既适合初学者夯实基础，又能帮助Python程序员提升技能，即使是 Python方面的技术专家，也能从书里找到令你耳目一新的东西。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111436737/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s27275372.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">利用Python进行数据分析</span>
+
+                    <span>WesMcKinney / 机械工业出版社 / ￥89.00</span>
+                    <span class="summary">【名人推荐】\n“科学计算和数据分析社区已经等待这本书很多年了：大量具体的实践建议，以及大量综合应用方法。本书在未来几年里肯定会成为Python领域中技术计算的权威指南。”\n——Fernando Pérez　加州大学伯克利分校 研究科学家， IPython的创始人之一\n【内容简介】\n还在苦苦寻觅用Python控制、处理、整理、分析结构化数据的完整课程？本书含有大量的实践案例，你将学会如何利用各种Python库（包括NumPy、pandas、matplotlib以及IPython等）高效地解决各式各样的数据分析问题。\n由于作者Wes McKinney是pandas库的主要作者，所以本书也可以作为利用Python实现数据密集型应用的科学计算实践指南。本书适合刚刚接触Python的分析人员以及刚刚接触科学计算的Python程序员。\n•将IPython这个交互式Shell作为你的首要开发环境。\n•学习NumPy（Numerical Python）的基础和高级知识。\n•从pandas库的数据分析工具开始。\n•利用高性能工具对数据进行加载、清理、转换、合并以及重塑。\n•利用matplotlib创建散点图以及静态或交互式的可视化结果。\n•利用pandas的groupby功能对数据集进行切片、切块和汇总操作。\n•处理各种各样的时间序列数据。\n•通过详细的案例学习如何解决Web分析、社会科学、金融学以及经•济学等领域的问题。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115422699/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s29400403.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python编程快速上手</span>
+
+                    <span>斯维加特 (Al Sweigart) / 人民邮电出版社 / ￥CNY 69.00</span>
+                    <span class="summary">如今，人们面临的大多数任务都可以通过编写计算机软件来完成。Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。通过Python编程，我们能够解决现实生活中的很多任务。\n本书是一本面向实践的Python编程实用指南。本书的目的，不仅是介绍Python语言的基础知识，而且还通过项目实践教会读者如何应用这些知识和技能。本书的首部分介绍了基本Python编程概念，第二部分介绍了一些不同的任务，通过编写Python程序，可以让计算机自动完成它们。第二部分的每一章都有一些项目程序，供读者学习。每章的末尾还提供了一些习题和深入的实践项目，帮助读者巩固所学的知识。附录部分提供了所有习题的解答。\n本书适合任何想要通过Python学习编程的读者，尤其适合缺乏编程基础的初学者。通过阅读本书，读者将能利用强大的编程语言和工具，并且会体会到Python编程的快乐。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111267768/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s3952568.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python学习手册</span>
+
+                    <span>[美]MarkLutz / 机械工业出版社 / ￥89.00元</span>
+                    <span class="summary">《Python学习手册(第3版)》讲述了：Python可移植、功能强大、易于使用，是编写独立应用程序和脚本应用程序的理想选择。无论你是刚接触编程或者刚接触Python，通过学习《Python学习手册(第3版)》，你可以迅速高效地精通核心Python语言基础。读完《Python学习手册(第3版)》，你会对这门语言有足够的了解，从而可以在你所从事的任何应用领域中使用它。\n《Python学习手册(第3版)》是作者根据过去10年用于教学而广为人知的培训课程的材料编写而成的。除了有许多详实说明和每章小结之外，每章还包括一个头脑风暴：这是《Python学习手册(第3版)》独特的一部分，配合以实用的练习题和复习题，让读者练习新学的技巧并测试自己的理解程度。\n《Python学习手册(第3版)》包括：\n类型和操作——深入讨论Python主要的内置对象类型：数字、列表和字典等。\n语句和语法——在Python中输入代码来建立并处理对象，以及Python一般的语法模型。\n函数——Python基本的面向过程工具，用于组织代码和重用。\n模块——封装语句、函数以及其他工具，从而可以组织成较大的组件。\n类和OOP——Python可选的面向对象编程工具，可用于组织程序代码从而实现定制和重用。\n异常和工具——异常处理模型和语句，并介绍编写更大程序的开发工具。\n讨论Python 3.0。\n《Python学习手册(第3版)》让你对Python语言有深入而完整的了解，从而帮助你理解今后遇到的任何Python应用程序实例。如果你准备探索Google和YouTube为什么选中了Python，《Python学习手册(第3版)》就是你入门的最佳指南。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115222664/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s4357883.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Cookbook</span>
+
+                    <span>Alex Martelli、Anna Ravenscroft、David Ascher / 人民邮电出版社 / ￥99.00元</span>
+                    <span class="summary">本书介绍了Python应用在各个领域中的一些使用技巧和方法，从最基本的字符、文件序列、字典和排序，到进阶的面向对象编程、数据库和数据持久化、 XML处理和Web编程，再到比较高级和抽象的描述符、装饰器、元类、迭代器和生成器，均有涉及。书中还介绍了一些第三方包和库的使用，包括 Twisted、GIL、PyWin32等。本书覆盖了Python应用中的很多常见问题，并提出了通用的解决方案。书中的代码和方法具有很强的实用性，可以方便地应用到实际的项目中，并产生立竿见影的效果。尤为难得的是，本书的各位作者都具有丰富的业界实践经验，因此，本书不仅给出了对各种问题的解决方案，同时还体现了很多专家的思维方式和良好的编程习惯，与具体的细节性知识相比，这部分内容无疑是本书的精华。\n本书适合具有一定Python基础的读者阅读参考。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115178503/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s3140466.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python核心编程（第二版）</span>
+
+                    <span>[美]WesleyJ·Chun / 人民邮电出版社 / ￥89.00元</span>
+                    <span class="summary">本书是Python开发者的完全指南——针对 Python 2.5全面升级\n·学习专业的Python风格、最佳实践和好的编程习惯；\n·加强对Python对象、内存模型和Python面向对象特性的深入理解；\n·构建更有效的Web、CGI、互联网、网络和其他客户端/服务器架构应用程序及软件；\n·学习如何使用Python中的Tkinter和其他工具来开发自己的GUI应用程序及软件；\n·通过用C等语言编写扩展来提升Python应用程序的性能，或者通过使用多线程增强I/0相关的应用程序的能力；\n·学习Python中有关数据库的API，以及如何在Python中使用各种不同的数据库系统，包括MySQL、Postgres和 SQLite。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115407092/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s28352586.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python语言及其应用</span>
+
+                    <span>[美] Bill Lubanovic / 人民邮电出版社 / ￥79.00元</span>
+                    <span class="summary">本书介绍Python 语言的基础知识及其在各个领域的具体应用，基于最新版本3.x。书中首先介绍了Python 语言的一些必备基本知识，然后介绍了在商业、科研以及艺术领域使用Python 开发各种应用的实例。文字简洁明了，案例丰富实用，是一本难得的Python 入门手册。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115416292/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s29086659.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python网络数据采集</span>
+
+                    <span>[美]米切尔 / 人民邮电出版社 / ￥CNY 59.00</span>
+                    <span class="summary">本书采用简洁强大的Python语言，介绍了网络数据采集，并为采集新式网络中的各种数据类型提供了全面的指导。第一部分重点介绍网络数据采集的基本原理：如何用Python从网络服务器请求信息，如何对服务器的响应进行基本处理，以及如何以自动化手段与网站进行交互。第二部分介绍如何用网络爬虫测试网站，自动化处理，以及如何通过更多的方式接入网络。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787121297335/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s28994368.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Web开发实战</span>
+
+                    <span>董伟明 / 电子工业出版社 / ￥105</span>
+                    <span class="summary">这本书涵盖了Web开发的方方面面，可以分为如下部分：\n1. 使用最新的Flask 0.11进行Web开发，学习Jinja2、Flask-Script、Flask-Migrate、Flask-Security、Flask-Assets等8种常用扩展，帮助读者理解Flask 的 优秀设计（上下文、BluePrint等），最后利用Mako、Flask_mako、SQLAlchemy、Pillow等技术实现一个豆瓣一个真实的服务。\n2. 阐述笔者对REST的理解，并提出一些设计API的注意事项，最后通过jQuery和fetch实现使用Ajax的例子，让读者了解如何让前后端通信。\n3. 对Python应用服务器，Web服务器、缓存系统、键值对数据库等技术的选型和使用方法，最后演示大型网站架构及其重要组件的用意。\n4. 使用Fabric、SaltStack、Ansible、Supervisor、Graphite等做系统管理，并演示一个通过最新的Sentry 8演示如何收集应用错误信息。\n5. 测试和持续集成，最后使用最新的Buildbot 0.9实现一个Github项目的持续集成。\n6. 深入RabbitMQ和Celery的原理和使用方法，最后分享笔者使用的进阶实践。\n7. 服务化及豆瓣服务化实践。\n8. 详细讲解豆瓣工程师都在用的DPark，包含安装、环境配置、使用和框架化分析uv&amp;pv，接着将展示几个笔者实际工作中的数据报表需求，并讲解如何用Pandas做数据可视化。\n9. 深入IPython和Jupyter Notebook这两个工具，并分享在豆瓣对应的实践。\n10. 从获取Linux服务器的相关情况、性能测试、分析Python程序性能瓶颈三个方面展示对应的工具及使用方法。\n11. 以抓取微信公众号文章为主线，分别使用多线程、多进程、Gevent、Future和asyncio这5种编程方式完成不同阶段的爬取任务，也深入地分析在它们之间如何选择。\n12. Python进阶和Web项目经验。\n封底推荐语\n伟明把他个人多年 Web 开发的经验，以及豆瓣十年来数百名优秀工程师在 Web 开发上最佳实践的积累，凝聚在了《Python Web 开发实战》这本书里，多维度、全面地介绍了 Python Web 开发涉及的各种技术。我向所有有兴趣使用 Python 做 Web 开发的开发者们，强烈推荐此书。\n——洪强宁，爱因互动CTO，前豆瓣首席架构师，前宜信大数据创新中心首席架构师\n感谢伟明把豆瓣的一些工程实践进行了整理和总结，这是本书最宝贵的一点，库谁都会用，但在什么场景使用，在生产环境中这个库的表现到底如何，是这本书的一个精华，期望将来还可以看到越来越多这样的图书，祝此书大卖。\n——清风，SAY CEO，前豆瓣技术总监。\n伟明将自身在 Web 领域所有方面的经验提炼后整理成书，本质上是将几十个关联产品的官方文档，结合具体工程经验进行了梳理，给出了领域问题最佳方案的关键思考点和自己的答案，而更加可贵的是，给出了这些思考点的来源，以及形成过程，即给出了解决各种 Web 领域问题的思维模式。\n——Zoom.Quiet（大妈），优视眼动科技 CTO，Python 中文社区创始人之一和管理员\n阅读本书，我最大的感受就是：全和新。本书的内容涉及了Web框架、Ajax的前后端交互、测试、数据库、数据分析、服务化、部署、系统管理、常用工具等内容，有点百科全书的意味。另外，书中讲的许多东西都是现在正在流行的技术或工具，像Flask、Celery、Jupyter、Supervisor、SaltStack、Pandas等。\n——李迎辉，Python开源资深行者，Python-CN邮件列表创建人，UliPad和Uliweb作者\n本书由Python开发开始，循序渐进，把网站工程的全貌展现在读者的眼前，是了解Web工程从开发到上线完整流程的绝佳参考书籍。\n——邢犇（CNBorn）, 前豆瓣东西技术负责人\n很多刚进入Python世界的人，伟明的这本书提供了一个非常好的“知识地图”，书中涉及了Python Web开发的方方面面。\n——胡阳（the5fire），手机搜狐网，任资深开发工程师\n这本书从开发环境的搭建，Web 框架的使用，到最后的持续集成和 Python 的进阶用法，无一不是他多年的实际工程经验总结，十分宝贵。\n——姚钢强（acmerfight），知乎工程师\n这本书非常全面地介绍了使用 Python 进行 Web 开发的方方面面，既有 Web 框架、缓存、消息队列、并发处理的场景介绍和技术选型，又有开发流程、质量保证的丰富实战经验。\n——蔡斌（VeryCB），DeepDevelop工程师，前豆瓣条目组技术负责人\n整本书都是作者对实际Web项目中大量实战经验的总结，绝非纸上谈兵。相信通过阅读该书可以帮助开发者规避掉大量项目中的“坑”，构建出更高性能、更稳定的Web项目。\n——Spawnris, 腾讯工程师</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111378105/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s10245980.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python标准库</span>
+
+                    <span>Doug Hellmann / 机械工业出版社华章公司 / ￥139.00元</span>
+                    <span class="summary">本书由资深Python专家亲自执笔，Python语言的核心开发人员作序推荐，权威性毋庸置疑。\n对于程序员而言，标准库与语言本身同样重要，它好比一个百宝箱，能为各种常见的任务提供完美的解决方案，所以本书是所有Python程序员都必备的工具书！本书以案例驱动的方式讲解了标准库中一百多个模块的使用方法（如何工作）和工作原理（为什么要这样工作），比标准库的官方文档更容易理解（一个简单的示例比一份手册文档更有帮助），为Python程序员熟练掌握和使用这些模块提供了绝佳指导。\n全书一共19章，系统而全面地对Python标准库中的一百多个模块进行了生动的讲解。这些模块主要包括：文本处理工具模块、与数据结构相关的模块、与算法有关的模块、管理日期和时间值的模块、用于数学计算的模块、管理文件系统的模块、用于数据存储与交换的模块、用于数据压缩与归档的模块、用于加密的模块、与进程和线程相关的模块、与网络通信和Email相关的模块、构建模块、支持处理多种自然语言和文化设置的模块、开发工具模块、与运行时特性相关的模块，等等。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787121277139/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s28385338.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">python绝技：运用python成为顶级黑客</span>
+
+                    <span>[美] TJ O&#39;Connor / 电子工业出版社 / ￥79.00元</span>
+                    <span class="summary">Python 是一门常用的编程语言，它不仅上手容易，而且还拥有丰富的支持库。对经常需要针对自己所 处的特定场景编写专用工具的黑客、计算机犯罪调查人员、渗透测试师和安全工程师来说，Python 的这些 特点可以帮助他们又快又好地完成这一任务，以极少的代码量实现所需的功能。《Python绝技：运用Python成为顶级黑客》结合具体的场景和真 实的案例，详述了 Python 在渗透测试、电子取证、网络流量分析、无线安全、网站中信息的自动抓取、 病毒免杀等领域内所发挥的巨大作用。\n《Python绝技：运用Python成为顶级黑客》适合计算机安全管理人员、计算机犯罪调查和电子取证人员、渗透测试人员，以及所有对计算机 安全感兴趣的爱好者阅读。同时也可供计算机、信息安全及相关专业的本/专科院校师生学习参考。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111473947/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s27397566.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python编程实战</span>
+
+                    <span>[美] Mark Summerfield / 机械工业出版社 / ￥69.00元</span>
+                    <span class="summary">《python编程实战：运用设计模式、并发和程序库创建高质量程序》由python开发者社区知名技术专家mark summerfield亲笔撰写，全球资深python专家doug hellmann作序鼎力推荐，是python领域最有影响力的著作之一。书中通过大量实用的范例代码和三个完整的案例研究，全面而系统地讲解了如何运用设计模式来规划代码结构，如何通过并发与cython等技术提升代码执行速度，以及如何利用各种python程序库来快速开发具体的应用程序和游戏。\n《python编程实战：运用设计模式、并发和程序库创建高质量程序》共8章：第1～3章分别介绍了python的几种设计模式(创建型设计模式、结构型设计模式和行为型设计模式)；第4章和第5章详细讲解了python的高级并发技术以及cython的用法；第6章具体介绍了python的高级网络编程；第7章阐释了如何用tkinter开发图形用户界面；第8章讲解了如何用opengl绘制3d图形。</span>
+                </div>
+            </a>
+        </div>
+    
+    <div class="row">
+        <div class="flex-hor-center">
+            <ul class="pagination" id="pagination"></ul>
+        </div>
+    </div>
+
+</div>
+<div id="footer" class="flex-hor-center">
+    <span>© 2017-2020 yushu.im created by 七月</span>
+</div>
+</body>
+
+
+    
+    <script src="/static/3rd/jquery-3.2.1.min.js"></script>
+    <script src="/static/3rd/bootstrap.min.js"></script>
+    <script src="/static/js/base.js"></script>
+    <script>
+        $SCRIPT_ROOT = "";
+    </script>
+
+    <script src="/static/3rd/jquery.twbsPagination.min.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/search_result.js"></script>
+
+
+</html>

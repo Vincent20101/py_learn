@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+
+
+    <title>鱼书</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    
+    <link rel="stylesheet"
+          href="/static/3rd/ui/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="shortcut icon"
+          href="/static/images/icon.png">
+
+    <link rel="stylesheet" href="/static/css/search-result.css">
+
+
+<body>
+
+    <div class="nav-self">
+        <div style="padding-top: inherit" class="container">
+            <form class="form-inline" action="/book/search" method="get">
+                <div class="flex-vertical-center-height">
+                    <div class="col-md-2  col-xs-3 logo">
+                        <img src="/static/images/logo-yushu.png"/>
+                    </div>
+                    <div style="margin-left:20px;" class="col-md-7  col-xs-6 input-group">
+                        <input name="q" type="text" placeholder="ISBN、图书名称"
+                               class="form-control input-sm">
+                        <span class="input-group-btn">
+                            <input class="btn btn-search" type="submit" value="搜索"/>
+                        </span>
+                    </div>
+                    <div class="col-md-3 col-xs-3" style="padding-right: 0">
+
+
+
+
+                        <div class="container-height flex-vertical-center login-box">
+                            
+                                <div style="height: 100%; width: 100%;display: flex; justify-content: flex-end; align-items: center">
+                                    <a href="/login">登录</a>
+                                    <a class="btn-end" href="/register">注册</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="sub-nav flex-vertical-center">
+        <div class="container" style="width: 100%">
+            <div class="row">
+                <div class="col-md-2 col-xs-3 col-md-offset-2">
+                    <a id="recent" href="/"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/upload.png"/>
+                        <span>最近上传</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="gifts" href="/my/gifts"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/gift.png"/>
+                        <span>赠送清单</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="wishes" href="/my/wish"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/wish.png"/>
+                        <span>心愿清单</span>
+                    </a>
+                </div>
+                <div class="col-md-2 col-xs-3">
+                    <a id="pending" href="/pending"
+                       class="flex-vertical-hor-center">
+                        <img src="/static/images/fish.png"/>
+                        <span>鱼漂</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='container'>
+    <div class="row">
+        
+            
+        
+        
+    </div>
+    
+     
+    <div style="margin-top:20px;" class="row flex-vertical-center">
+        <div class="col-md-6">
+            <span class="sub-title">搜索 <span class="space highlight"
+                                             id="keyword">python</span>的结果</span>
+        </div>
+        <div class="col-md-3 col-md-offset-3">
+            <span class="sub-title"> 共 <span class="space"
+                                             id="total">58</span> 条记录</span>
+        </div>
+    </div>
+    <hr>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115333742/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s27142477.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python编程入门（第3版）</span>
+
+                    <span>[加] Toby Donaldson / 人民邮电出版社 / ￥39.00</span>
+                    <span class="summary">Python是一种解释型、面向对象、动态数据类型的高级程序设计语言，自20世纪90年代初诞生至今，逐渐被广泛应用于处理系统管理任务和Web编程。\n本书用通俗易懂的语言结合常见任务、屏幕图和详细的解释，循序渐进地介绍了Python的基础知识，助你轻松、迅速地学习Python。书中没有深奥的理论或者高级应用，非常适合用来自学。读罢本书，你定能掌握Python的各项基础知识，成为一名真正的Python程序员！</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787302442875/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s29078359.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python机器学习及实践</span>
+
+                    <span>范淼、李超 / 清华大学出版社 / ￥49元</span>
+                    <span class="summary">本书面向所有对机器学习与数据挖掘的实践及竞赛感兴趣的读者，从零开始，以Python编程语言为基础，在不涉及大量数学模型与复杂编程知识的前提下，逐步带领读者熟悉并且掌握当下最流行的机器学习、数据挖掘与自然语言处理工具，如Scikitlearn、NLTK、Pandas、gensim、XGBoost、Google Tensorflow等。 全书共分4章。第1章简介篇，介绍机器学习概念与Python编程知识；第2章基础篇，讲述如何使用Scikitlearn作为基础机器学习工具；第3章进阶篇，涉及怎样借助高级技术或者模型进一步提升既有机器学习系统的性能；第4章竞赛篇，以Kaggle平台为对象，帮助读者一步步使用本书介绍过的模型和技巧，完成三项具有代表性的竞赛任务。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115424297/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s29028995.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python密码学编程</span>
+
+                    <span>【美】Al Sweigart / 人民邮电出版社 / ￥56.00 元</span>
+                    <span class="summary">本书主要介绍了加密算法，同时从Python编程的角度来引导读者将加密算法更好地实现。书中不仅讲述了详细的算法理论，还附以详细的代码示例帮助读者更好地学习算法，并最终实现加密算法。除此之外，书中还提供了相应的源码下载资源，能够让读者获取到最完整真实的代码示例，帮助读者更好地进行后续的开发和学习。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9781887902991/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s27234143.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Programming</span>
+
+                    <span>John M. Zelle / Franklin Beedle &amp; Assoc / ￥USD 40.00</span>
+                    <span class="summary">This is the second edition of John Zelle&#39;s Python Programming, updated for Python 3. This book is designed to be used as the primary textbook in a college-level first course in computing. It takes a fairly traditional approach, emphasizing problem solving, design, and programming as the core skills of computer science. However, these ideas are illustrated using a non-traditional language, namely Python. Although Python is used as the language, teaching Python is not the main point of this book. Rather, Python is used to illustrate fundamental principles of design and programming that apply in any language or computing environment. In some places, I have purposely avoided certain Python features and idioms that are not generally found in other languages. There are already many good books about Python on the market; this book is intended as an introduction to computing. Features include the following: *Extensive use of computer graphics. *Interesting examples. *Readable prose. *Flexible spiral coverage. *Just-in-time object coverage. *Extensive end-of-chapter problems.</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111521235/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s28376942.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python数据分析与挖掘实战</span>
+
+                    <span>张良均、王路、谭立云、苏剑林 / 机械工业出版社 / ￥69.00元</span>
+                    <span class="summary">10余位数据挖掘领域资深专家和科研人员，10余年大数据挖掘咨询与实施经验结晶。从数据挖掘的应用出发，以电力、航空、医疗、互联网、生产制造以及公共服务等行业真实案例为主线，深入浅出介绍Python数据挖掘建模过程，实践性极强。\n本书共15章，分两个部分：基础篇、实战篇。基础篇介绍了数据挖掘的基本原理，实战篇介绍了一个个真实案例，通过对案例深入浅出的剖析，使读者在不知不觉中通过案例实践获得数据挖掘项目经验，同时快速领悟看似难懂的数据挖掘理论。读者在阅读过程中，应充分利用随书配套的案例建模数据，借助相关的数据挖掘建模工具，通过上机实验，以快速理解相关知识与理论。\n基础篇（第1～5章），第1章的主要内容是数据挖掘概述；第2章对本书所用到的数据挖掘建模工具Python语言进行了简明扼要的说明；第3章、第4章、第5章对数据挖掘的建模过程，包括数据探索、数据预处理及挖掘建模的常用算法与原理进行了介绍。\n实战篇（第6～15章），重点对数据挖掘技术在电力、航空、医疗、互联网、生产制造以及公共服务等行业的应用进行了分析。在案例结构组织上，本书是按照先介绍案例背景与挖掘目标，再阐述分析方法与过程，最后完成模型构建的顺序进行的，在建模过程的关键环节，穿插程序实现代码。最后通过上机实践，加深读者对数据挖掘技术在案例应用中的理解。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9781593274078/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s24518778.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python for Kids</span>
+
+                    <span>Jason R. Briggs / No Starch Press / ￥USD 34.95</span>
+                    <span class="summary">For Kids Aged 10+ (And Their Parents) The code in this book runs on almost anything: Windows, Mac, Linux, even an OLPC laptop or Raspberry Pi!  Python is a powerful, expressive programming language that&#39;s easy to learn and fun to use! But books about learning to program in Python can be kind of dull, gray, and boring, and that&#39;s no fun for anyone.  Python for Kids brings Python to life and brings you (and your parents) into the world of programming. The ever-patient Jason R. Briggs will guide you through the basics as you experiment with unique (and often hilarious) example programs that feature ravenous monsters, secret agents, thieving ravens, and more. New terms are defined; code is colored, dissected, and explained; and quirky, full-color illustrations keep things on the lighter side.  Chapters end with programming puzzles designed to stretch your brain and strengthen your understanding. By the end of the book you&#39;ll have programmed two complete games: a clone of the famous Pong and &#34;Mr. Stick Man Races for the Exit&#34;-a platform game with jumps, animation, and much more. As you strike out on your programming adventure, you&#39;ll learn how to:  * Use fundamental data structures like lists, tuples, and maps * Organize and reuse your code with functions and modules * Use control structures like loops and conditional statements * Draw shapes and patterns with Python&#39;s turtle module * Create games, animations, and other graphical wonders with tkinter  Why should serious adults have all the fun? Python for Kids is your ticket into the amazing world of computer programming.</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115245076/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s4622623.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python 3程序开发指南</span>
+
+                    <span>（美）萨默菲尔德 / 人民邮电出版社 / ￥69.00元</span>
+                    <span class="summary">编辑推荐\n在本书中，一流的Python程序员Mark Summerfield展示了如何充分利用Python 3的功能与特性来编写代码。与以前的版本相比。Python 3功能更强大，使用更方便，语法更一致，表达能力更丰富。本书将编写程序、使用标准或第三方Python 3库、创建新的专用库模块所必需的所有相关知识整合到了一起。\n作为一名具有多年Python使用经验的程序员，Summerfield在本书中为读者深度分析与讲解了从其他途径无法获取的Python3使用与开发技术。Summerfield从Python的“优美核心（beautiful heart）”（即编写高健壮性、高性能程序的8个关键要素）开始进行讲解，并以这些关键要素为基础，介绍了有助于增强程序开发实用技能的新主题，每个主题都包含其概念和多个操作实例。\n本书既可以作为Python编程指南，也可以作为Python语言参考手册。\n内容简介\nPython是一种脚本语言，在各个领域得到了日益广泛的应用。本书全面深入地对Python语言进行了讲解。\n本书首先讲述了构成Python语言的8个关键要素，之后分章节对其进行了详尽的阐述，包括数据类型、控制结构与函数、模块、文件处理、调试、进程与线程、网络、数据库、正则表达式、GUI程序设计等各个方面，并介绍了其他一些相关主题。全书内容以实例讲解为主线，每章后面附有练习题，便于读者更好地理解和掌握所讲述的内容。\n本书适合于作为Python语言教科书使用，对Python程序设计人员也有一定的参考价值。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787564122614/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s6237088.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python自然语言处理</span>
+
+                    <span>(英)伯德、(英)克莱因、(美)洛普 / 东南大学出版社 / ￥64.00元</span>
+                    <span class="summary">《Python自然语言处理(影印版)》提供了非常易学的自然语言处理入门介绍，该领域涵盖从文本和电子邮件预测过滤，到自动总结和翻译等多种语言处理技术。在《Python自然语言处理(影印版)》中，你将学会编写Python程序处理大量非结构化文本。你还将通过使用综合语言数据结构访问含有丰富注释的数据集，理解用于分析书面通信内容和结构的主要算法。\n《Python自然语言处理》准备了充足的示例和练习，可以帮助你：\n从非结构化文本中抽取信息，甚至猜测主题或识别“命名实体”；\n分析文本语言结构，包括解析和语义分析；\n访问流行的语言学数据库，包括WordNet和树库(treebank)；\n从多种语言学和人工智能领域中提取的整合技巧。\n《Python自然语言处理(影印版)》将帮助你学习运用Python编程语言和自然语言工具包(NLTK)获得实用的自然语言处理技能。如果对于开发Web应用、分析多语言新闻源或记录濒危语言感兴趣——即便只是想从程序员视角观察人类语言如何运作，你将发现《Python自然语言处理》是一本令人着迷且极为有用的好书。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9781430232377/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s6999960.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python Algorithms</span>
+
+                    <span>MagnusLieHetland / Apress / ￥USD 49.99</span>
+                    <span class="summary">Python Algorithms explains the Python approach to algorithm analysis and design. Written by Magnus Lie Hetland, author of Beginning Python, this book is sharply focused on classical algorithms, but it also gives a solid understanding of fundamental algorithmic problem-solving techniques. * The book deals with some of the most important and challenging areas of programming and computer science, but in a highly pedagogic and readable manner. * The book covers both algorithmic theory and programming practice, demonstrating how theory is reflected in real Python programs. * Well-known algorithms and data structures that are built into the Python language are explained, and the user is shown how to implement and evaluate others himself. What you&#39;ll learn * Transform new problems to well-known algorithmic problems with efficient solutions, or show that the problems belong to classes of problems thought not to be efficiently solvable. * Analyze algorithms and Python programs both using mathematical tools and basic experiments and benchmarks. * Prove correctness, optimality, or bounds on approximation error for Python programs and their underlying algorithms. * Understand several classical algorithms and data structures in depth, and be able to implement these efficiently in Python. * Design and implement new algorithms for new problems, using time-tested design principles and techniques. * Speed up implementations, using a plethora of tools for high-performance computing in Python. Who this book is for The book is intended for Python programmers who need to learn about algorithmic problem-solving, or who need a refresher. Students of computer science, or similar programming-related topics, such as bioinformatics, may also find the book to be quite useful. Table of Contents * Introduction * The Basics * Counting 101 * Induction and Recursion ...and Reduction * Traversal: The Skeleton Key of Algorithmics * Divide, Combine, and Conquer * Greed Is Good? Prove It! * Tangled Dependencies and Memoization * From A to B with Edsger and Friends * Matchings, Cuts, and Flows * Hard Problems and (Limited) Sloppiness</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115361448/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s27969839.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python编程初学者指</span>
+
+                    <span>[美]Michael Dawson / 人民邮电出版社</span>
+                    <span class="summary">Python是一种解释型、面向对象、动态数据类型的高级程序设计语言。Python可以用于很多的领域，从科学计算到游戏开发。\n《Python编程初学者指南》尝试以轻松有趣的方式来帮助初学者掌握Python语言和编程技能。《Python编程初学者指南》共12章，每一章都会用一个完整的游戏来演示其中的关键知识点，并通过编写好玩的小软件这种方式来学习编程，引发读者的兴趣，降低学习的难度。每章最后都会对该章的知识点进行小结，还会给出一些小练习让读者试试身手。作者很巧妙的将所有编程知识嵌入到了这些例子中，真正做到了寓教于乐。\n《Python编程初学者指南》内容浅显易懂，示例轻松活泼，是国际畅销的Python初学者教程，适合对Python感兴趣的初级和中级读者学习参考。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787111266631/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s6072862.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python UNIX和Linux系统管理指南</span>
+
+                    <span>基弗特 (Gift, Noab)、琼斯 (Jones, Jeremy M.) / 机械工业出版社 / ￥65.00元</span>
+                    <span class="summary">《Python UNIX和Linux系统管理指南》介绍了Python语言如何为管理uNIx和Linux服务器提供各种更加有效的任务处理方式。书中各章都提出了具体的管理问题，如并发或数据备份，然后通过Python示例提供了解决方案。通过《Python UNIX和Linux系统管理指南》，读者可以学习如何用Python开发自己的一套命令行工具来解决诸多问题。\n作者建立了一个免费下载的Ubuntu虚拟机，其中包含《Python UNIX和Linux系统管理指南》的源代码和运行实例，也包括SNMP、IPython、SQLAlchemy及其他工具。通过《Python UNIX和Linux系统管理指南》，你可以发现Python在如下几个方面的作用：\n读取文本文件并提取信息。\n使用多线程和fork选项。\n使用网络设备从一个进程获取另一个进程的信息。\n创建可点击的、易于交互的GUl工具。\n通过交互式SNMP编程实现监控大型主机集群。\n掌握IPython shell，作为Bash、Korn或Z—Shell的替换或补充。\n将云计算整合到基础设施中，编写Google App引擎的应用程序。\n通过定制脚本解决独特数据备份的难题。\n使用Djan90、SQLAlchemy和Storm ORM与数据库进行交互。\n通过《Python UNIX和Linux系统管理指南》及其补充的虚拟机，你可以了解如何打包并部署Python应用程序和库，以及编写代码在类似的多个UNIXfH Linux平台上运行。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115387134/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s28072805.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python高手之路</span>
+
+                    <span>Julien Danjou / 人民邮电出版社 / ￥49.00元</span>
+                    <span class="summary">这不是一本常规意义上Python的入门书。这本书中没有Python关键字和for循环的使用，也没有细致入微的标准库介绍，而是完全从实战的角度出发，对构建一个完整的Python应用所需掌握的知识进行了系统而完整的介绍。更为难得的是，本书的作者是开源项目OpenStack的PTL（项目技术负责人）之一，因此本书结合了Python在OpenStack中的应用进行讲解，非常具有实战指导意义。\n《Python高手之路》从如何开始一个新的项目讲起，首先是整个项目的结构设计，对模块和库的管理，如何编写文档，进而讲到如何分发，以及如何通过虚拟环境对项目进行测试。此外，《Python高手之路》还涉及了很多高级主题，如性能优化、插件化结构的设计与架构、Python 3的支持策略等。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787302273608/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s7025859.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python科学计算</span>
+
+                    <span>张若愚 / 清华大学出版社 / ￥98.00元</span>
+                    <span class="summary">本书介绍如何用Python开发科学计算的应用程序，除了介绍数值计算之外，还着重介绍如何制作交互式的2D、3D图像，如何设计精巧的程序界面，如何与C语言编写的高速计算程序结合，如何编写声音、图像处理算法等内容。书中涉及的Python扩展库包括NumPy、SciPy、SymPy、matplotlib、Traits、TraitsUI、Chaco、TVTK、Mayavi、VPython、OpenCV等，涉及的应用领域包括数值运算、符号运算、二维图表、三维数据可视化、三维动画演示、图像处理以及界面设计等。\n书中以大量实例引导读者逐步深入学习，每个实例程序都有详尽的解释，并都能在本书推荐的运行环境中正常运行。此外，本书附有大量的图表和插图，力求减少长篇的理论介绍和公式推导，以便读者通过实例和数据学习并掌握理论知识。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115428028/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img3.doubanio.com/lpic/s28891775.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python编程：从入门到实践</span>
+
+                    <span>[美]埃里克·马瑟斯 / 人民邮电出版社 / ￥CNY 89.00</span>
+                    <span class="summary">本书是一本针对所有层次的Python 读者而作的Python 入门书。全书分两部分：第一部分介绍用Python 编程所必须了解的基本概念，包括matplotlib、NumPy 和Pygal 等强大的Python 库和工具介绍，以及列表、字典、if 语句、类、文件与异常、代码测试等内容；第二部分将理论付诸实践，讲解如何开发三个项目，包括简单的Python 2D 游戏开发如何利用数据生成交互式的信息图，以及创建和定制简单的Web 应用，并帮读者解决常见编程问题和困惑。</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="row col-padding">
+            <a href="/book/9787115433503/detail" class="">
+                <div class="col-md-2">
+                    <img class="book-img-small shadow" src="https://img1.doubanio.com/lpic/s29028877.jpg">
+                </div>
+                <div class="col-md-7 flex-vertical description-font">
+                    <span class="title">Python网络编程（第3版）</span>
+
+                    <span>[美] Brandon Rhodes、[美] John Goerzen / 人民邮电出版社 / ￥79.00元</span>
+                    <span class="summary">本书针对想要深入理解使用Python来解决网络相关问题或是构建网络应用程序的技术人员，结合实例讲解了网络协议、网络数据及错误、电子邮件、服务器架构和HTTP及Web应用程序等经典话题。具体内容包括：全面介绍Python3中最新提供的SSL支持，异步I/O循环的编写，用Flask框架在Python代码中配置URL，跨站脚本以及跨站请求伪造攻击网站的原理及保护方法，等等。</span>
+                </div>
+            </a>
+        </div>
+    
+    <div class="row">
+        <div class="flex-hor-center">
+            <ul class="pagination" id="pagination"></ul>
+        </div>
+    </div>
+
+</div>
+<div id="footer" class="flex-hor-center">
+    <span>© 2017-2020 yushu.im created by 七月</span>
+</div>
+</body>
+
+
+    
+    <script src="/static/3rd/jquery-3.2.1.min.js"></script>
+    <script src="/static/3rd/bootstrap.min.js"></script>
+    <script src="/static/js/base.js"></script>
+    <script>
+        $SCRIPT_ROOT = "";
+    </script>
+
+    <script src="/static/3rd/jquery.twbsPagination.min.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/search_result.js"></script>
+
+
+</html>

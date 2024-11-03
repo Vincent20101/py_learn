@@ -1,0 +1,7 @@
+[home_Alexander_Pozdnyakov]
+name=home:Alexander_Pozdnyakov (RHEL_7)
+type=rpm-md
+baseurl=http://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/RHEL_7/
+gpgcheck=0
+#gpgkey=http://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/RHEL_7/repodata/repomd.xml.key
+enabled=1
