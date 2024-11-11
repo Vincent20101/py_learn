@@ -1,0 +1,7 @@
+.*.swp
+*~
+tags
+tools/bin
+.idea/
+*.log
+.vscode
