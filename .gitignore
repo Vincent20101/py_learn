@@ -5,3 +5,5 @@ tools/bin
 .idea/
 *.log
 .vscode
+*.rdb
+rdb.json

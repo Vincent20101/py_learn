@@ -12,6 +12,7 @@ class IntField(BaseField):
         self.min_value = min_value
 
     def __get__(self, instance, owner):
+        print("---lhb---",self.name)
         if instance is None:
             return self
         return instance.__dict__[self.name]
@@ -76,6 +77,7 @@ class IntegerField(Field):
 class ModelMetaclass(type):
     '''定义元类'''
     def __new__(cls, name, bases, attrs):
+        print(name, attrs)
         if name=='Model':
             return super(ModelMetaclass,cls).__new__(cls, name, bases, attrs)
         mappings = dict()
@@ -89,6 +91,7 @@ class ModelMetaclass(type):
             attrs.pop(k)
         attrs['__table__'] = name.lower() # 假设表名和为类名的小写,创建类时添加一个__table__类属性
         attrs['__mappings__'] = mappings # 保存属性和列的映射关系，创建类时添加一个__mappings__类属性
+        print(attrs)
         return super(ModelMetaclass,cls).__new__(cls, name, bases, attrs)
 
 #三、编写Model基类
@@ -97,19 +100,21 @@ class Model(dict, metaclass=ModelMetaclass):
         super(Model, self).__init__(**kw)
 
     def __getattr__(self, key):
+        print("lhb:", key)
         try:
             return self[key]
         except KeyError:
             raise AttributeError(r"'Model' object has no attribute '%s'" % key)
 
     def __setattr__(self, key, value):
+        print("===", key, value)
         self[key] = value
 
     def save(self):
         fields = []
         params = []
         args = []
-        for k, v in self.__mappings__.iteritems():
+        for k, v in self.__mappings__.items():
             fields.append(v.name)
             params.append('?')
             args.append(getattr(self, k, None))
@@ -130,6 +135,7 @@ class User(Model):
 
 # 创建一个实例：
 u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')
+print(u.__dict__)
 # 保存到数据库：
 u.save()
 

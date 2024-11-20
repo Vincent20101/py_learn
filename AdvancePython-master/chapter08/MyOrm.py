@@ -42,7 +42,7 @@ class CharField(Field):
         self._value = None
         self.db_column = db_column
         if max_length is None:
-            raise ValueError("you must spcify max_lenth for charfiled")
+            raise ValueError("you must specify max_length for char filed")
         self.max_length = max_length
 
     def __get__(self, instance, owner):
@@ -58,6 +58,7 @@ class CharField(Field):
 
 class ModelMetaClass(type):
     def __new__(cls, name, bases, attrs, **kwargs):
+        print(name)
         if name == "BaseModel":
             return super().__new__(cls, name, bases, attrs, **kwargs)
         fields = {}

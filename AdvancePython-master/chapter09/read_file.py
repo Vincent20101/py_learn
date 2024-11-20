@@ -14,7 +14,11 @@ def myreadlines(f, newline):
       break
     buf += chunk
 
-with open("input.txt") as f:
-    for line in myreadlines(f, "{|}"):
-        print (line)
+# with open("input.txt") as f:
+#     for line in myreadlines(f, "{|}"):
+#         print (line)
 
+with open("input.txt") as f:
+  lines = f.readlines()
+  for line in lines:
+    print(line.split("{|}"))

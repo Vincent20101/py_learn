@@ -13,6 +13,7 @@ def filter_func(item):
         return True
 print('-------')
 filter_result = filter(filter_func, frunts)
+print(type(filter_result))
 print(list(filter_result))
 
 map_result = map(filter_func, frunts)  # > all
@@ -21,5 +22,5 @@ print(list(map_result))
 reduce_result = reduce(lambda x, y: x * y, [1, 1, 2, 4, 4])
 print(reduce_result)
 
-reduce_result_str = reduce(lambda x, y: x * y, frunts)
+reduce_result_str = reduce(lambda x, y: x + y, frunts)
 print(reduce_result_str)

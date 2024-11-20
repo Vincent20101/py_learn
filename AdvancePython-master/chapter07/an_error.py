@@ -25,8 +25,8 @@ if __name__ == "__main__":
 
     com3 = Company("com3")
     com3.add("bobby5")
-    print (com2.staffs)
-    print (com3.staffs)
+    print ("com2",com2.staffs)
+    print ("com3",com3.staffs)
     print (com2.staffs is com3.staffs)
 
     # a = 1

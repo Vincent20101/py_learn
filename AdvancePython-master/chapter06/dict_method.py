@@ -13,6 +13,7 @@ new_dict["bobby1"]["company"] = "imooc3"
 new_list = ["bobby1", "bobby2"]
 
 new_dict = dict.fromkeys(new_list, {"company":"imooc"})
-
+print(new_dict)
 new_dict.update((("bobby","imooc"),))
+print(new_dict)
 

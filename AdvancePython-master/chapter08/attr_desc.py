@@ -69,8 +69,10 @@ user = User(), 那么user.age 顺序如下：
 
 if __name__ == "__main__":
     user = User()
+    user.age = 12
     user.__dict__["age"] = "abc"
     print (user.__dict__)
+    print (User.__dict__)
     print (user.age)
     # print (getattr(user, 'age'))
     # user = User("bobby", date(year=1987, month=1, day=1))
