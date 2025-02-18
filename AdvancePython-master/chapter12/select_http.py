@@ -76,8 +76,11 @@ if __name__ == "__main__":
     fetcher = Fetcher()
     import time
     start_time = time.time()
+    # fetcher.get_url("http://www.baidu.com")
     for url in range(20):
-        url = "http://shop.projectsedu.com/goods/{}/".format(url)
+        # url = "http://shop.projectsedu.com/goods/{}/".format(url)
+        print(url)
+        url = "https://www.baidu.com"
         urls.append(url)
         fetcher = Fetcher()
         fetcher.get_url(url)

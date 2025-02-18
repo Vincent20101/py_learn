@@ -2,14 +2,14 @@
 def exe_try():
     try:
         print ("code started")
-        raise KeyError
+        # raise KeyError
         return 1
     except KeyError as e:
         print ("key error")
-        return 2
+        # return 2
     else:
         print ("other error")
-        return 3
+        # return 3
     finally:
         print ("finally")
         # return 4
@@ -26,10 +26,10 @@ class Sample:
     def do_something(self):
         print ("doing something")
 
-with Sample() as sample:
-    sample.do_something()
+# with Sample() as sample:
+#     sample.do_something()
 
-# if __name__ == "__main__":
-#     result = exe_try()
-#     print (result)
+if __name__ == "__main__":
+    result = exe_try()
+    print (result)
 

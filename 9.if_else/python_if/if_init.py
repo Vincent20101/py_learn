@@ -4,6 +4,8 @@ info = 'my name is xiaomu'
 
 info_list = info.split()
 print(info_list)
+if not info_list:
+    print("not info")
 
 if info_list[0] == 'xiaomu':
     print(1)

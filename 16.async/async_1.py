@@ -52,8 +52,17 @@ if __name__ == '__main__':
     g_a.run()
     g_b = gevent.spawn(gevent_b)
     gevent_list = [g_a, g_b]
-    result = gevent.joinall(gevent_list)
+    result = gevent.joinall(gevent_list,  raise_error=True)
     print(result[0].value)
     print(result[1].value)
     print(time.time() - start)
     print('parent is %s' % os.getpid())
+
+    for i, g in enumerate(gevent_list):
+        # 判断每个协程的执行情况
+        if g.successful() is False:
+            # 出现错误 raise_error=False执行完后获取协程的错误
+            print(g.exception)
+        else:
+            # 获取返回值
+            print(g.value)

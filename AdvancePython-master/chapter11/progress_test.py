@@ -25,7 +25,8 @@ def random_sleep(n):
     time.sleep(n)
     return n
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # If use ProcessPoolExecutor, it must put under  if __name__ == "__main__"
+    # with ThreadPoolExecutor(3) as executor:
     with ProcessPoolExecutor(3) as executor:
         all_task = [executor.submit(random_sleep, (num)) for num in [2]*30]
         start_time = time.time()
